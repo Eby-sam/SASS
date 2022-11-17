@@ -5,15 +5,15 @@ const development = {
     module: {
         rules: [
             {
-                test: /\.css$/i,
-                use: ['style-loader',
-                    {
+                test: /\.s?css$/i,
+                use: ['style-loader', {
                         loader: 'css-loader',
                         options: {
                             import: true,
                             sourceMap: true,
                         }
                     },
+                    'sass-loader',
                 ],
             },
             {
