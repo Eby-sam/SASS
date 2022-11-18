@@ -1,0 +1,10 @@
+$back: white;
+$border: green;
+
+
+#container {
+  width: 150px;
+  height: 150px;
+  background-color: (darken($back, 25%));
+  border: 5px solid (lighten($border, 20%));
+}
